@@ -9,15 +9,13 @@ import Footer from "./components/Footer.jsx";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Cryptexia">
          <Header/>
         <Routes>
-           
           <Route path="/" element={<Home/>} />
           <Route path="/exchange" element={<Exchange/>} />
           <Route path="/coins" element={<Coins/>} />
-          <Route path="/coin/:id" element={<CoinDetails />} />    
-          
+          <Route path="/coin/:id" element={<CoinDetails />} />       
         </Routes>
         <Footer/>
       </BrowserRouter>
