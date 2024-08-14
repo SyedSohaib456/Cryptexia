@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ *{
+   font-family: 'Poppins';
+}
+
+.social a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  font-size: 2rem;
+  border-radius: 50%;
+  color: var(--main-color);
+  transition: 0.3s ease-in-out;
+}
+.social a:hover{
+  transform: scale(1.3)translateY(-5px);
+  box-shadow: 0 0 25 var(--main-color) ;
+  background-color: var(--main-color);
+}
+@media (max-width: 1025px) {
+  .navButton {
+    display: none !important;
+  }
+  .homeImg{
+    height: 50%;
+    width: 50%;
+  }
+}
+.drop{
+  backdrop-filter: blur(10px);
+}
+
+.menu{
+  color: white !important;
+}
+.burger{
+  color: white !important;
+}
+
+
+:root {
+  color: 'white';
+  background-color: '#1A202C';
+}
+
+#menu{
+  color: white !important;
+}
